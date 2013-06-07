@@ -7,19 +7,19 @@ https://github.com/icefox/git-hooks
 ## Current hooks
 
 Name | Type | Description
---|--|--
-no-commit-on-staging | pre-commit | Disallow commits on staging
-validate-package-json | pre-commit | Validate the project's package.json
+---|---|---
+[no-commit-on-staging](/pre-commit/no-commit-on-staging) | pre-commit | Disallow commits on staging
+[validate-package-json](/pre-commit/validate-package-json) | pre-commit | Validate the project's package.json
 
 ## Quick install git hooks:
 
-cd /usr/local/bin && wget -O git-hooks https://raw.github.com/icefox/git-hooks/master/git-hooks && chmod +x git-hooks
+    cd /usr/local/bin && wget -O git-hooks https://raw.github.com/icefox/git-hooks/master/git-hooks && chmod +x git-hooks
 
 It uses the git_hooks folder in a repo to know what to run, or looks in your home dir, or in a global config.
 
 ## Install
 
-`cd ~ && git clone git://github.com/leftlogic/git_hooks.git .git_hooks`
+    cd ~ && git clone git://github.com/leftlogic/git_hooks.git .git_hooks
 
 ## License
 
