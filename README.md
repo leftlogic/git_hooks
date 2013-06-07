@@ -21,6 +21,8 @@ It uses the git_hooks folder in a repo to know what to run, or looks in your hom
 
     cd ~ && git clone git://github.com/leftlogic/git_hooks.git .git_hooks
 
+Then run `git hooks --install` in any projects you want to use the hooks.
+
 ## License
 
 MIT http://leftlogic.mit-license.org
