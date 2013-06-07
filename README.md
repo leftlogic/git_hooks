@@ -19,7 +19,7 @@ It uses the git_hooks folder in a repo to know what to run, or looks in your hom
 
 ## Install
 
-`cd ~ && git clone https://github.com/leftlogic/git_hooks.git .git_hooks`
+`cd ~ && git clone git://github.com/leftlogic/git_hooks.git .git_hooks`
 
 ## License
 
