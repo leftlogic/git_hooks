@@ -1,0 +1,10 @@
+#!/bin/sh
+
+node -e "try { require('./package.json') } catch(e) { process.exit(1); }"
+ERR=$?
+
+if [ $ERR != 0 ]; then
+  echo "Commit failed: package.json invalid."
+fi
+
+exit $ERR

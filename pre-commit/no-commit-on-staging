@@ -1,0 +1,13 @@
+#!/bin/sh
+
+BRANCH="$(git symbolic-ref HEAD 2>/dev/null)" ||
+BRANCH="(unnamed branch)"     # detached HEAD
+
+BRANCH=${BRANCH##refs/heads/}
+
+if [ "$BRANCH" == "staging" ]; then
+  echo "No commits on staging."
+  exit 1
+fi
+
+exit 0
